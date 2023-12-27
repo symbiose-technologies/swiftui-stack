@@ -138,6 +138,7 @@ struct BookFullScreenStack: View, PreviewProvider {
 
       var testPost: Post { postsForGrid.first! }
       @State var testPostIsPresented: Bool = false
+//      @Binding var testPostIsPresented: Bool
       
     var body: some View {
 
@@ -244,10 +245,19 @@ struct BookFullScreenStack: View, PreviewProvider {
         }
         .padding(.horizontal, 16)
 
+          
+          HStack {
+              Spacer()
+              Text("Bottom")
+              Spacer()
+          }
+          
+        .presentsStackDestination(target: .current, transition: .slideVertical, isPresented: $testPostIsPresented, destination: {
+            PostDetail(colorScheme: .takeOne(except: ColorScheme.type10), post: testPost)
+        })
       }
-      .presentsStackDestination(target: .current, transition: .slide, isPresented: $testPostIsPresented, destination: {
-          PostDetail(colorScheme: .takeOne(except: ColorScheme.type10), post: testPost)
-      })
+        
+        
     }
   }
 

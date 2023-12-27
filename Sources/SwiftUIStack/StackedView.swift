@@ -47,6 +47,12 @@ public struct StackedView: View, Identifiable, Equatable {
         anchor: .trailing,
         isSource: false
       )
+      .matchedGeometryEffect(
+        id: MatchedGeometryEffectIdentifiers.EdgeBottom(content: .stacked(id)),
+        in: stackNamespace!,
+        anchor: .bottom,
+        isSource: false
+      )
       .environment(\.stackIdentifier, id)
       .onAppear {
 
