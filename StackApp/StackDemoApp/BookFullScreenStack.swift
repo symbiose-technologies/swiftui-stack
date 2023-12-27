@@ -136,6 +136,9 @@ struct BookFullScreenStack: View, PreviewProvider {
 
     @Namespace var local
 
+      var testPost: Post { postsForGrid.first! }
+      @State var testPostIsPresented: Bool = false
+      
     var body: some View {
 
       LazyVStack(spacing: 16) {
@@ -144,14 +147,21 @@ struct BookFullScreenStack: View, PreviewProvider {
         ScrollView(.horizontal) {
           LazyHStack {
 
-            ForEach(postsForCarousel) { post in
-              StackLink(
-                transition: .matched(identifier: post.id.description + "Shaped", in: local),
-                value: post
-              ) {
-                ShapedGridCell(colorScheme: colorScheme, post: post)
+              ForEach(postsForCarousel) { post in
+                  Button {
+                      testPostIsPresented = true
+                  } label: {
+                      ShapedGridCell(colorScheme: colorScheme, post: post)
+                  }
+                  
+  //              StackLink(
+  //                transition: .matched(identifier: post.id.description + "Shaped", in: local),
+  //                value: post
+  //              ) {
+  //                ShapedGridCell(colorScheme: colorScheme, post: post)
+  //              }
               }
-            }
+              
 
           }
           .padding(.horizontal, 16)
@@ -235,6 +245,9 @@ struct BookFullScreenStack: View, PreviewProvider {
         .padding(.horizontal, 16)
 
       }
+      .presentsStackDestination(target: .current, transition: .slide, isPresented: $testPostIsPresented, destination: {
+          PostDetail(colorScheme: .takeOne(except: ColorScheme.type10), post: testPost)
+      })
     }
   }
 

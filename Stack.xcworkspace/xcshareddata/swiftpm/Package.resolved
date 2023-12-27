@@ -10,12 +10,12 @@
       }
     },
     {
-      "identity" : "swiftui-gesture-velocity",
+      "identity" : "swiftui-support",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/FluidGroup/swiftui-gesture-velocity",
+      "location" : "https://github.com/symbiose-technologies/swiftui-support",
       "state" : {
-        "revision" : "9c83f8995f9e5efc29db2fca4b9ff058283f1603",
-        "version" : "1.0.0"
+        "branch" : "sym-dev",
+        "revision" : "a4e53ca54517ee050d16df4d8ee06959ff7a0689"
       }
     },
     {

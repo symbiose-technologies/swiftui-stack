@@ -5,7 +5,10 @@ import PackageDescription
 
 let package = Package(
   name: "swiftui-stack",
-  platforms: [.iOS(.v14)],
+  platforms: [
+    .iOS(.v15),
+    .macOS(.v13)
+  ],
   products: [
     .library(
       name: "SwiftUIStack",
@@ -13,8 +16,8 @@ let package = Package(
     ),
   ],
   dependencies: [
-    .package(url: "https://github.com/FluidGroup/swiftui-support", from: "0.4.1"),
-    .package(url: "https://github.com/FluidGroup/swiftui-snap-dragging-modifier", from: "1.1.2"),
+    .package(url: "https://github.com/symbiose-technologies/swiftui-support", branch: "sym-dev"),
+    .package(url: "https://github.com/symbiose-technologies/swiftui-snap-dragging-modifier", branch: "sym-dev"),
     .package(url: "https://github.com/nalexn/ViewInspector.git", from: "0.9.2"),
   ],
   targets: [

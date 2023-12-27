@@ -1,4 +1,5 @@
 
+import Foundation
 struct M<Trait>: Hashable, Identifiable {
   var id: String = UUID().uuidString
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223DA34A2B3CBE4300F2B8CE /* StackDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DA3492B3CBE4300F2B8CE /* StackDemoApp.swift */; };
 		4B15FAB829FFED8A000442FA /* BookMatchedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B15FAB729FFED89000442FA /* BookMatchedShape.swift */; };
 		4B29A6FD29FC5C31003CCC00 /* BookFullScreenStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B29A6FC29FC5C31003CCC00 /* BookFullScreenStack.swift */; };
 		4B29A6FF29FC5CA1003CCC00 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B29A6FE29FC5CA1003CCC00 /* Colors.swift */; };
@@ -17,7 +18,6 @@
 		4B2A924D28E4B6FA006624AD /* StackDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A924C28E4B6FA006624AD /* StackDemoAppTests.swift */; };
 		4B2A925728E4B6FA006624AD /* StackDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A925628E4B6FA006624AD /* StackDemoAppUITests.swift */; };
 		4B2A925928E4B6FA006624AD /* StackDemoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A925828E4B6FA006624AD /* StackDemoAppUITestsLaunchTests.swift */; };
-		4B51F641290ACAAE0015CC21 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B51F640290ACAAE0015CC21 /* Launch Screen.storyboard */; };
 		4B6D472329FC2A5900658A0F /* swiftui-color in Frameworks */ = {isa = PBXBuildFile; productRef = 4B6D472229FC2A5900658A0F /* swiftui-color */; };
 		4B77AA5B28E4BE75006307DA /* BookStackNoPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B77AA5A28E4BE75006307DA /* BookStackNoPath.swift */; };
 		4B77AA5D28E4BEA2006307DA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B77AA5C28E4BEA2006307DA /* Model.swift */; };
@@ -50,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		223DA3492B3CBE4300F2B8CE /* StackDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackDemoApp.swift; sourceTree = "<group>"; };
+		223DA34B2B3CD75400F2B8CE /* swiftui-snap-dragging-modifier */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swiftui-snap-dragging-modifier"; path = "../../swiftui-snap-dragging-modifier"; sourceTree = "<group>"; };
+		223DA34C2B3CD81400F2B8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4B15FAB729FFED89000442FA /* BookMatchedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMatchedShape.swift; sourceTree = "<group>"; };
 		4B29A6FC29FC5C31003CCC00 /* BookFullScreenStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFullScreenStack.swift; sourceTree = "<group>"; };
 		4B29A6FE29FC5CA1003CCC00 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -64,14 +67,11 @@
 		4B2A925228E4B6FA006624AD /* StackDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2A925628E4B6FA006624AD /* StackDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackDemoAppUITests.swift; sourceTree = "<group>"; };
 		4B2A925828E4B6FA006624AD /* StackDemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackDemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4B51F640290ACAAE0015CC21 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		4B554D5D2A06D29A00DA1BF2 /* swiftui-snap-dragging-modifier */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swiftui-snap-dragging-modifier"; path = "../submodules/swiftui-snap-dragging-modifier"; sourceTree = "<group>"; };
 		4B77AA5A28E4BE75006307DA /* BookStackNoPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookStackNoPath.swift; sourceTree = "<group>"; };
 		4B77AA5C28E4BEA2006307DA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4B77AA5E28E4BF0C006307DA /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		4B77AA6028E4D1F9006307DA /* BookNesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNesting.swift; sourceTree = "<group>"; };
 		4B77AA6228E54FE9006307DA /* BookNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNavigationStack.swift; sourceTree = "<group>"; };
-		4B92D47E2A0267D80053760B /* swiftui-support */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swiftui-support"; path = "../submodules/swiftui-support"; sourceTree = "<group>"; };
 		4BC6C24A28E4B8120081E217 /* BookStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookStack.swift; sourceTree = "<group>"; };
 		4BC6C24C28E4B83B0081E217 /* StatefulPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulPage.swift; sourceTree = "<group>"; };
 		4BCFDBE6290FC271004D58D3 /* BookStack_Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookStack_Grid.swift; sourceTree = "<group>"; };
@@ -109,8 +109,7 @@
 		4B2A91FE28E4B627006624AD = {
 			isa = PBXGroup;
 			children = (
-				4B554D5D2A06D29A00DA1BF2 /* swiftui-snap-dragging-modifier */,
-				4B92D47E2A0267D80053760B /* swiftui-support */,
+				223DA34B2B3CD75400F2B8CE /* swiftui-snap-dragging-modifier */,
 				4B2A923428E4B664006624AD /* swiftui-stack */,
 				4B2A923A28E4B6F9006624AD /* StackDemoApp */,
 				4B2A924B28E4B6FA006624AD /* StackDemoAppTests */,
@@ -133,8 +132,10 @@
 		4B2A923A28E4B6F9006624AD /* StackDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				223DA34C2B3CD81400F2B8CE /* Info.plist */,
 				4BDA70622A0382D3001AC9AF /* Instagram */,
 				4B15FAB729FFED89000442FA /* BookMatchedShape.swift */,
+				223DA3492B3CBE4300F2B8CE /* StackDemoApp.swift */,
 				4B29A6FC29FC5C31003CCC00 /* BookFullScreenStack.swift */,
 				4B2A923B28E4B6F9006624AD /* AppDelegate.swift */,
 				4B2A923D28E4B6F9006624AD /* ContentView.swift */,
@@ -148,7 +149,6 @@
 				4B77AA5C28E4BEA2006307DA /* Model.swift */,
 				4B77AA5E28E4BF0C006307DA /* Views.swift */,
 				4B77AA6028E4D1F9006307DA /* BookNesting.swift */,
-				4B51F640290ACAAE0015CC21 /* Launch Screen.storyboard */,
 				4B29A6FE29FC5CA1003CCC00 /* Colors.swift */,
 			);
 			path = StackDemoApp;
@@ -306,7 +306,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B51F641290ACAAE0015CC21 /* Launch Screen.storyboard in Resources */,
 				4B2A924328E4B6FA006624AD /* Preview Assets.xcassets in Resources */,
 				4B2A924028E4B6FA006624AD /* Assets.xcassets in Resources */,
 			);
@@ -342,6 +341,7 @@
 				4B2A923E28E4B6F9006624AD /* ContentView.swift in Sources */,
 				4B77AA5F28E4BF0C006307DA /* Views.swift in Sources */,
 				4B77AA6328E54FE9006307DA /* BookNavigationStack.swift in Sources */,
+				223DA34A2B3CBE4300F2B8CE /* StackDemoApp.swift in Sources */,
 				4B77AA5D28E4BEA2006307DA /* Model.swift in Sources */,
 				4BC6C24D28E4B83B0081E217 /* StatefulPage.swift in Sources */,
 				4BDA70642A0382F5001AC9AF /* IGTabView.swift in Sources */,
@@ -506,22 +506,24 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StackDemoApp/Preview Content\"";
-				DEVELOPMENT_TEAM = JX92XL88RZ;
+				DEVELOPMENT_TEAM = 3U588QPJ72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StackDemoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.muukii.StackDemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = app.sym.StackDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -536,22 +538,24 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StackDemoApp/Preview Content\"";
-				DEVELOPMENT_TEAM = JX92XL88RZ;
+				DEVELOPMENT_TEAM = 3U588QPJ72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StackDemoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.muukii.StackDemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = app.sym.StackDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

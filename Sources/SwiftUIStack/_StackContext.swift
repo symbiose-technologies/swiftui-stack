@@ -223,6 +223,38 @@ public final class _StackContext: ObservableObject, Equatable {
 
     return identifier
   }
+    
+    @discardableResult
+    func push<D: View>(
+        isPresented: Binding<Bool>,
+      destination: D,
+      transition: some StackTransition,
+      linkEnvironmentValues: LinkEnvironmentValues
+    ) -> _StackedViewIdentifier {
+      // TODO: how to validate the desination is already presented
+
+      // FIXME: Use linkEnvironmentValues
+
+      let identifier = _StackedViewIdentifier(id: UUID().uuidString)
+
+      let stackedView = StackedView(
+        material: .moment(isPresented),
+        identifier: identifier,
+        linkEnvironmentValues: linkEnvironmentValues,
+        content:
+          destination
+          .modifier(
+            RestoreSafeAreaModifier()
+              .concat(
+                transition.destinationModifier(context: makeDestinationContext())
+              )
+          )
+      )
+
+      stackedViews.append(stackedView)
+
+      return identifier
+    }
 
   /**
    For momentary-push
